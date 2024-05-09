@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+}
+
+/* AFETA A TODOS OS CARDS */
+.card {
+    margin: 50px;
+    background-color: rgba(230, 230, 230);
+    width: 400px;
+    height: 570px;
+    border-radius: 10px;
+    text-align: center;
+}
+/* ----------------------------- */
+
+
+/* TWITTER CARD */
+.card1{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+/* ----------------------------- */
+
+
+/* INSTAGRAM CARD */
+.card2 {
+    background-color: #FB175C;
+    color: white;
+
+}
+/* ----------------------------- */
+
+
+/* YOUTUBE CARD */
+.card3{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+/* ----------------------------- */
+
+
+/* AFETA O TITULO DO CARD: TWITTER, IG, YT  */
+.card>h1 {
+    font-size: 40px;
+    padding-top: 10px;
+}
+
+
+/* AFETA o TEXTO DO CARD */
+.card>p {
+    font-size: 17px;
+    padding: 20px 20px;
+}
+
+
+/* AFETA A IMAGEM/ICONE DO CARD */
+.card>img {
+    width: 25%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+
+/* AFETA A TODOS OS BOTÕES: READ MORE */
+.btn {
+    width: 350px;
+    height: 60px;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px;
+    border: none;
+    border-radius: 30px; 
+    background-color: black;
+    color: whitesmoke;
+    transition: 0.5s background;
+    cursor: pointer;
+}

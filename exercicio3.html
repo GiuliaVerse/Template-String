@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cards</title>
+    <link rel="stylesheet" href="style3.css" />
+  </head>
+  <body>
+    <div id="cardContainer" class="main"></div>
+
+    <script>
+      // Define data para cada card
+      const cardsData = [
+        {
+          title: "TWITTER",
+          imageUrl:
+            "https://s2-techtudo.glbimg.com/f5K6FXnCmZnRvij2SNsrZSn9Iso=/600x0/filters:quality(70)/https://i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2023/e/D/6e24vbQSaRBG2ScINKIQ/imagem-6.jpg",
+          description:
+            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged",
+        },
+        {
+          title: "INSTAGRAM",
+          imageUrl: "logo.png",
+          description:
+            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged",
+        },
+        {
+          title: "YOUTUBE",
+          imageUrl:
+            "https://cdn.icon-icons.com/icons2/3261/PNG/512/youtube_logo_icon_206627.png",
+          description:
+            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged",
+        },
+      ];
+
+      // Função para renderizar os cards
+      function renderCards() {
+        const cardContainer = document.getElementById("cardContainer");
+        cardContainer.innerHTML = ""; // Limpar conteudo
+
+        // Loop(percorre) os dados dos cards e cria elementos para card
+        cardsData.forEach((card, index) => {
+          const cardElement = `
+                    <div class="card card${index + 1}">
+                        <img src="${card.imageUrl}" alt="card">
+                        <h1>${card.title}</h1>
+                        <p>${card.description}</p>
+                        <button class="btn">READ MORE</button>
+                    </div>
+                `;
+          cardContainer.innerHTML += cardElement; //  Adiciona o card ao Container
+        });
+      }
+      renderCards(); // Chama a função renderCards para renderizar os cards ao carregar a página
+    </script>
+  </body>
+</html>
