@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+}
+
+/* AFETA A TODOS OS CARDS */
+.card {
+    margin: 50px;
+    background-color: rgba(230, 230, 230);
+    width: 400px;
+    height: 570px;
+    border-radius: 10px;
+    text-align: center;
+}
+/* ----------------------------- */
+
+
+/* TWITTER CARD */
+.card1{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+/* ----------------------------- */
+
+
+/* INSTAGRAM CARD */
+.card2 {
+    background-color: #FB175C;
+    color: white;
+
+}
+/* ----------------------------- */
+
+
+/* YOUTUBE CARD */
+.card3{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+/* ----------------------------- */
+
+
+.card>h1 {
+    font-size: 40px;
+    padding-top: 10px;
+}
+
+.card>p {
+    font-size: 17px;
+    padding: 20px 20px;
+}
+
+.card>img {
+    width: 25%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.btn {
+    width: 350px;
+    height: 60px;
+    font-size: 20px;
+    font-weight: 800;
+    padding: 10px;
+    border: none;
+    border-radius: 30px; 
+    background-color: black;
+    color: whitesmoke;
+    transition: 0.5s background;
+    cursor: pointer;
+}
+
+.btn-white {
+    background-color: white;
+    color: FB175C;
+}
+
+
+/* .btn:hover{
+    background-color: blueviolet;
+} */
